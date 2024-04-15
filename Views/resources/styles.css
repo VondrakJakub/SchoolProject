@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root{
+    --frame: #ced1d1e5;
+    --primary: #070708;
+    --error: red;
+    font-family: "Metal Mania";
+    background-color: #d3d3d3af; 
+
+}
+
+.container--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto 0px auto;
+    height: 100vh;
+}
+
+a{
+    font-weight: 600;
+    text-decoration: none;
+    transition: text-decoration 5s ease-in-out;
+}
+
+a:visited {
+    color: black; 
+  }
+
+a:hover{
+    text-decoration: underline;   
+}
+
+input {
+    font-size: 1rem;
+    padding: 20px;
+    background-color: var(--frame);
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px var(--frame) inset; /* Barva pozadí vstupního pole */
+  }
+
+.form {
+    z-index: 100;
+    min-width: 33%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 24px 24px 24px 24px;
+    border-radius: 2rem;
+    border-width: 2px;
+    background-color: white;
+    border-style: solid;
+    border-color: var(--frame);
+}
+
+.form__footer {
+    display: flex;
+    justify-content: center;
+}
+
+.form__error-message {
+    display: none;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--error);
+}
+
+.form__error-message-pass {
+    display: none;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--error);
+}
+
+.form__heading {
+    font-weight: 400;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.button--primary {
+    background-color: var(--primary);
+    font-size: 1.5rem;
+    padding: 16px 64px 16px 64px;
+    border-radius: 1rem;
+    color: white;
+    border: none;
+}
+
+.main--maps {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 135px;
+}
+
+.map--link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    margin-left: 50px;
+    font-size: 30px;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+img{
+    width: 600px;
+    height: 320px;
+    border-radius: 20px;
+}
+
+.main--header{
+    background-color: var(--primary);
+    height: 130px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary); 
+    color: #fff; 
+    padding: 10px 0; 
+    display: flex;
+}
+
+.main--links {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
+
+.header--h1 {
+    padding-left: 30px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 60px;
+    justify-content: left;
+    letter-spacing: 15px;
+    font-weight: 300;
+}
+
+.map {
+    font-size: 30px;
+    margin-left: 10px;
+    width: 20%;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    font-weight: 300;
+    text-decoration: none;
+    }
+
+.map:visited {
+    color: white;
+}
+
+h2 {
+    display: flex;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    width: 100%;
+    justify-content: center;
+}
+
+.main--example {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+    font-size: 30px;
+    padding: 0;
+    margin-left: 30px;
+    margin-bottom: 0;
+}
+
+.card_text {
+    display: flex;
+    width: 70%;
+    margin-left: 30px;
+    
+}
+
+.card__p {
+    font-size: 20px;
+    width: 33%;
+    text-align: left;
+    border-right: 2px solid black;
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    
+}
+
+.delete {
+    background-color: red;
+    font-size: 18px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 25px;
+    border: none;
+    align-items: center;
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: "Metal Mania";
+}
+
+.delete:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.delete_button {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    width: 15%;
+}
+
+.desc_modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+
+.modal-content {
+    overflow: auto;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .close {
+    text-align: center;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.main--dash {
+    margin-top: 150px;
+}
+
+.example {
+    width: 33%;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    background-color: white;
+    border: solid black 2px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 25px;
+}
+
+.modal_btn {
+    text-decoration: none;
+    border: none;
+    width: 50%;
+    background-color: white;
+    font-size: 18px;
+    font-family: "Metal Mania";
+}
+
+.modal_btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.new_track_form {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    gap: 1rem;
+    padding: 20px;
+    border-radius: 25px;
+    border-width: 2px;
+    background-color: white;
+    border-style: solid;
+    border-color: var(--frame);
+}
+
+.track_form_input {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "Metal Mania";
+    
+    
+}
+
+.track_form_fieldset {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    border: none;
+    align-items: center;
+}
+
+.text_area {
+    width: 80%;
+    font-family: "Metal Mania";
+    font-size: 26px;
+    height: 150px;
+    padding: 20px;
+    background-color: var(--frame);
+    border: none;
+    border-radius: 25px;
+}
+
+.form_input_text {
+    font-family: "Metal Mania";
+    height: 70px;
+    padding: 0;
+    text-align: center;
+    font-size: 26px;
+    background-color: var(--frame);
+    border-radius: 25px;
+}
+
+.track_form_fieldset fieldset {
+    border: none;
+}
+
+.track_form_fieldset legend {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.track_form_add {
+    font-family: "Metal Mania";
+    width: 70%;
+    border-radius: 25px;
+    border: none;
+    font-size: 26px;
+    letter-spacing: 2px;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
