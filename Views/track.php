@@ -21,7 +21,19 @@ echo '
     <div id="modal_' .$track['id'] .'" class="desc_modal">
         <div class="modal-content">
             <div class="close">Close</div>
-            <p>' .$track['description']. '</p>
+            <button class="modal_btn" data-modal-id="edit_modal_' .$track['id'] . '">Edit</button>
+            <p class="modal_p">' .nl2br($track['description']). '</p>
         </div>
-    </div>      
+    </div>
+    
+    <div id="edit_modal_' .$track['id'] .'" class="desc_modal_edit">
+        <div class="modal-content-edit">
+            <div class="close">Close</div>
+            <form class="edit_button" action="/Project/edit" method="POST">
+            <textarea class="text_area_modal" name="description" id="description" cols="30" rows="10">' .$track['description']. '</textarea>
+            <input name="track_id" type="hidden" value="' . $track['id'] . '">
+            <button type="submit" class="modal_btn">Save</button>
+        </form>
+        </div>
+    </div>   
 ';

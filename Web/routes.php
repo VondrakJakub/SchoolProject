@@ -14,6 +14,8 @@ $router->addRoute('/Project/Outland', DashboardController::class, 'showOutland',
 $router->addRoute('/Project/EasternKingdoms', DashboardController::class, 'showEasterK', 'GET');
 $router->addRoute('/Project/Northrend', DashboardController::class, 'showNorthrend', 'GET');
 $router->addRoute('/Project/delete', DashboardController::class, 'delete', 'POST');
+$router->addRoute('/Project/edit', DashboardController::class, 'edit', 'POST');
+$router->addRoute('/Project/edit', DashboardController::class, 'edit', 'GET');
 
 
 

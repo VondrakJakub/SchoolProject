@@ -94,4 +94,11 @@ class Track extends BaseModel
 
         $this->database->sql($sql);
     }
+
+    public function edit($description, int $id)
+    {
+        $sql = "UPDATE tracks SET description = '$description' WHERE id = $id";
+
+        $this->database->sql($sql);
+    }
 }

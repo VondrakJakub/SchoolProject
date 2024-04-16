@@ -77,5 +77,6 @@ View::render('header', ['title' => 'Collection helper']);
     </main>
 
     <script src="/Project/Views/resources/modal.js"></script>
+    <script src="/Project/Views/resources/modal_edit.js"></script>
 </body>
 </html>
