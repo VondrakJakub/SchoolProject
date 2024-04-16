@@ -1,4 +1,6 @@
-<?php Core\View::render('header', ['title' => 'Login']);
+<?php 
+Core\View::render('header', ['title' => 'Login']);
+
 $errors = 
 [
     'wrong_credentials'=>'Invalid email or password',

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const passwordInput = document.getElementById('password');
-    const errorMessage = document.querySelector('.form__error-message-pass');
+    const errorMessage = document.querySelector('.form__error-message-pass-l');
     const form = document.querySelector('form');
 
     errorMessage.style.display = "none";

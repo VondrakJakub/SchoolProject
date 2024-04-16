@@ -82,6 +82,13 @@ input:-webkit-autofill {
 }
 
 .form__error-message {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--error);
+}
+
+.form__error-message-pass-l {
     display: none;
     font-size: 14px;
     margin-top: 0;
@@ -89,7 +96,7 @@ input:-webkit-autofill {
     color: var(--error);
 }
 
-.form__error-message-pass {
+.form__error-message-pass-s {
     display: none;
     font-size: 14px;
     margin-top: 0;

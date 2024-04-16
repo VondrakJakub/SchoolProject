@@ -29,9 +29,10 @@ class LoginController
             } else {
                 return header('location: /Project/login?error=wrong_credentials');
             }
+        } else {
+            return header('location: /Project/login?error=wrong_credentials');
         }
 
-       return header('location: /Project/login?error=wrong_credentials');
     }
 
     public function logout()
