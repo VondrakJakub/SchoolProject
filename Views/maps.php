@@ -1,4 +1,5 @@
-<?php Core\View::render('header', ['title' => 'Maps']);?>
+<?php Core\View::render('header', ['title' => 'Maps']);
+?>
 
 <body>
 <header class="main--header">

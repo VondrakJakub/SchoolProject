@@ -89,4 +89,13 @@ class DashboardController
         $this->track->delete($_POST['track_id']);
         header('location: /Project/maps');
     }
+
+    public function edit()
+    {
+        $description = $_POST['description'];
+        $id = $_POST['track_id'];
+        
+        $this->track->edit($description, $id);
+        header('Location: /Project/maps');
+    } 
 }

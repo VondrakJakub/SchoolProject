@@ -280,6 +280,19 @@ h2 {
     background-color: rgba(0,0,0,0.4);
   }
 
+  .desc_modal_edit {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+
 .modal-content {
     overflow: auto;
     background-color: #fefefe;
@@ -290,7 +303,35 @@ h2 {
     width: 80%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
 
+  .modal-content-edit {
+    overflow: auto;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .edit_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal_p {
+    font-size: 30px;
+    border: 1px solid black;
+    width: 90%;
+    height: min-content;
+    border-radius: 25px;
+    padding: 10px;
   }
 
   .close {
@@ -338,7 +379,16 @@ h2 {
     border: none;
     width: 50%;
     background-color: white;
-    font-size: 18px;
+    font-size: 26px;
+    font-family: "Metal Mania";
+}
+
+.modal_btn_two {
+    text-decoration: none;
+    border: none;
+    width: 50%;
+    background-color: white;
+    font-size: 36px;
     font-family: "Metal Mania";
 }
 
@@ -399,6 +449,17 @@ h2 {
     background-color: var(--frame);
     border: none;
     border-radius: 25px;
+}
+
+.text_area_modal {
+    font-family: "Metal Mania";
+    font-size: 30px;
+    border: 1px solid black;
+    width: 90%;
+    height: min-content;
+    border-radius: 25px;
+    padding: 10px;
+    overflow-y: auto;
 }
 
 .form_input_text {
