@@ -21,7 +21,7 @@ echo '
     <div id="modal_' .$track['id'] .'" class="desc_modal">
         <div class="modal-content">
             <div class="close">Close</div>
-            <button class="modal_btn" data-modal-id="edit_modal_' .$track['id'] . '">Edit</button>
+            <button class="modal_btn_two" data-modal-id="edit_modal_' .$track['id'] . '">Edit</button>
             <p class="modal_p">' .nl2br($track['description']). '</p>
         </div>
     </div>

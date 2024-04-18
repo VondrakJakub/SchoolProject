@@ -1,7 +1,7 @@
 function openModal(modalId) {
     const modal = document.getElementById(modalId);
 
-    const previousModal = document.querySelector('.desc_modal_edit.open');
+    const previousModal = document.querySelector('.desc_modal.open');
     if (previousModal) {
         previousModal.style.display = 'none';
         previousModal.classList.remove('open');
@@ -11,7 +11,7 @@ function openModal(modalId) {
     modal.classList.add('open');
 }
 
-const modalButtons = document.querySelectorAll('.modal_btn');
+const modalButtons = document.querySelectorAll('.modal_btn_two');
 
 modalButtons.forEach(button => {
     button.addEventListener('click', () => {
